@@ -1,0 +1,220 @@
+Testing endTurn returns correct player to whose Turn
+
+Check if whose turn is correct before endTurn is called
+Player = 0, expected = 0
+Calling endTurn...
+Player = 1, expected = 0
+Passed
+Check if whose turn is correct before endTurn is called
+Player = 1, expected = 1
+Calling endTurn...
+Player = 2, expected = 1
+Passed
+Check if whose turn is correct before endTurn is called
+Player = 2, expected = 2
+Calling endTurn...
+Player = 3, expected = 2
+Passed
+Check if whose turn is correct before endTurn is called
+Player = 3, expected = 3
+Calling endTurn...
+Player = 0, expected = 3
+Passed
+All tests passed!
+File 'dominion.c'
+Lines executed:19.81% of 641
+Branches executed:17.75% of 417
+Taken at least once:14.63% of 417
+No calls
+dominion.c:creating 'dominion.c.gcov'
+
+Testing coins spent after buy card
+
+Coins = 10, expected = 10
+Passed
+Coins = 8, expected = 8
+Passed
+Coins = 5, expected = 5
+Passed
+Coins = 2, expected = 2
+Passed
+Coins = 10, expected = 10
+Passed
+Coins = 7, expected = 7
+Passed
+Coins = 4, expected = 4
+Passed
+Coins = 4, expected = 4
+Passed
+Coins = 5, expected = 5
+Passed
+Coins = 6, expected = 6
+Passed
+All tests passed!
+File 'dominion.c'
+Lines executed:24.80% of 641
+Branches executed:27.34% of 417
+Taken at least once:18.47% of 417
+No calls
+dominion.c:creating 'dominion.c.gcov'
+
+Testing coin value added
+
+Game initialized
+Adding Gold
+Coins = 15, expected = 15
+Passed
+Adding silver
+Coins = 10, expected = 10
+Passed
+Adding Copper
+Coins = 5, expected = 5
+Passed
+All tests passed!
+File 'dominion.c'
+Lines executed:26.21% of 641
+Branches executed:27.34% of 417
+Taken at least once:19.66% of 417
+No calls
+dominion.c:creating 'dominion.c.gcov'
+
+Testing game over when no provinces are left
+
+Game initialized
+Check if game is over prior before setting provinces to 0:
+Game over state = 0
+Game state = 1
+isGameover = 1, expected = 1
+Passed
+Resetting provinces...
+isGameover = 0, expected = 0
+Passed
+Setting random supply cards to 0...
+Supply Card = 13
+Supply Card = 19
+Supply Card = 8
+Supply Card = 0
+Supply Card = 4
+Supply Card = 8
+Game state = 1
+isGameover = 1, expected = 1
+Passed
+All tests passed!
+File 'dominion.c'
+Lines executed:28.08% of 641
+Branches executed:29.26% of 417
+Taken at least once:21.58% of 417
+No calls
+dominion.c:creating 'dominion.c.gcov'
+
+----------------- Testing Card: smithy ----------------
+TEST 1: +3 cards
+Hand Count Incorrect!
+hand count = 4, expected = 7
+Deck Count incorrect!
+deck count = 5, expected = 2
+Coins Correct!
+coins = 4, expected = 4
+
+
+
+Checking next players hand!
+Next Player Hand Count Correct!
+hand count = 0, expected = 0
+Next Player Deck Count Correct!
+deck count = 5, expected = 5
+
+ >>>>> SUCCESS: Testing complete smithy <<<<<
+
+File 'dominion.c'
+Lines executed:31.83% of 641
+Branches executed:36.69% of 417
+Taken at least once:23.02% of 417
+No calls
+dominion.c:creating 'dominion.c.gcov'
+
+----------------- Testing Card: adventure ----------------
+TEST 1: 
+
+Checking if right amount of cards were added!
+Hand Count Incorrect!
+hand count = 8, expected = 7
+Deck Count incorrect!
+deck count = 0, expected = 3
+Coins Correct!
+coins = 4, expected = 4
+
+
+TEST 2: 
+
+Checking if only treasure cards were added!
+Correct treasure cards(2) added
+
+TEST 3: 
+
+Checking next players hand!
+Next Player Hand Count Correct!
+hand count = 0, expected = 0
+Next Player Deck Count Correct!
+deck count = 0, expected = 3
+
+ >>>>> SUCCESS: Testing complete adventure <<<<<
+
+File 'dominion.c'
+Lines executed:36.04% of 641
+Branches executed:40.53% of 417
+Taken at least once:26.62% of 417
+No calls
+dominion.c:creating 'dominion.c.gcov'
+
+----------------- Testing Card: great_hall ----------------
+TEST 1: 
+
+Checking if right amount of cards were added!
+Hand Count Correct!
+hand count = 6, expected = 6
+Deck Count Correct!
+deck count = 4, expected = 4
+Coins Correct!
+coins = 4, expected = 4
+
+
+TEST 2: 
+
+Checking extra action was added!
+Success, additional action added!
+Number of actions = 2, expected = 2
+
+TEST 3: 
+Check card was discarded 
+Hand Count Incorrect!
+hand count = 6, expected = 5
+
+ >>>>> SUCCESS: Testing complete great_hall <<<<<
+
+File 'dominion.c'
+Lines executed:36.82% of 641
+Branches executed:40.53% of 417
+Taken at least once:26.86% of 417
+No calls
+dominion.c:creating 'dominion.c.gcov'
+
+----------------- Testing Card: gardens ----------------
+TEST 1: Were Actions and cards added to deck
+hand count = 5, expected = 5
+Hand Count Correct!
+hand count = 5, expected = 5
+Deck Count Correct!
+deck count = 4, expected = 4
+Action Count Incorrect!
+actions = 2, expected = 3
+
+ >>>>> SUCCESS: Testing complete gardens <<<<<
+
+File 'dominion.c'
+Lines executed:37.75% of 641
+Branches executed:40.53% of 417
+Taken at least once:27.10% of 417
+No calls
+dominion.c:creating 'dominion.c.gcov'
+

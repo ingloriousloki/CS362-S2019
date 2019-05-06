@@ -603,7 +603,8 @@ void callSmithy(struct gameState *state, int currentPlayer, int handPos) {
 
 void callAdventurer( struct gameState * state, int currentPlayer, int * z, int * cardDrawn, int * drawntreasure, int * temphand)
 {
-    while(*drawntreasure <2){
+    // BUG!!! Draws 4 instead of 2
+    while(*drawntreasure < 4){
         if (state->deckCount[currentPlayer] <1){//if the deck is empty we need to shuffle discard and add to deck
             shuffle(currentPlayer, state);
         }
@@ -613,8 +614,8 @@ void callAdventurer( struct gameState * state, int currentPlayer, int * z, int *
             *drawntreasure = *drawntreasure + 1;
         else{
             temphand[*z]= *cardDrawn;
-            // Introduced Bug here. Increses handcount of player instead of decreasing it
-            state->handCount[currentPlayer]++; //this should just remove the top card (the most recently drawn one)
+            // Introduced Bug here. Increases handcount of player instead of decreasing it
+            state->handCount[currentPlayer]--; //this should just remove the top card (the most recently drawn one)
             *z = *z + 1;
         }
     }
