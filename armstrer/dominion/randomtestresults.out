@@ -1,0 +1,27 @@
+----------------- Testing Card: village ----------------
+Test failed, incorrect amount actions...
+File 'dominion.c'
+Lines executed:20.12% of 641
+Branches executed:22.30% of 417
+Taken at least once:13.67% of 417
+No calls
+dominion.c:creating 'dominion.c.gcov'
+
+----------------- Testing Card: great hall ----------------
+Test failed, incorrect amount of cards discarded...
+File 'dominion.c'
+Lines executed:20.90% of 641
+Branches executed:22.30% of 417
+Taken at least once:13.91% of 417
+No calls
+dominion.c:creating 'dominion.c.gcov'
+
+----------------- Testing Card: adventure ----------------
+Test failed Number of cards in hand incorrect...
+File 'dominion.c'
+Lines executed:25.12% of 641
+Branches executed:26.14% of 417
+Taken at least once:17.99% of 417
+No calls
+dominion.c:creating 'dominion.c.gcov'
+
